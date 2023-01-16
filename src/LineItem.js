@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTrashAlt } from 'react-icons/fa'
+import { FaTrash } from 'react-icons/fa'
 
 const LineItem = ({ item, handleCheck, handleDelete }) => {
   return (
@@ -13,7 +13,7 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
          style={(item.checked) ? { textDecoration: 'line-through' } : null}
              onDoubleClick={() => handleCheck(item.id)}
          >{item.item}</label>
-         <FaTrashAlt 
+         <FaTrash 
              onClick={() => handleDelete(item.id)}
              role="button" 
              tabIndex="0" 

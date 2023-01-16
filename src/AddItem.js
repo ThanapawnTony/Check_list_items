@@ -12,14 +12,14 @@ const AddItem = ({ newItem, setNewItem, handleSubmit }) => {
             ref={inputRef}
             id='addItem'
             type='text'
-            placeholder='Add Item'
+            placeholder='Add List Item'
             required
             value={newItem}
             onChange={(e) => setNewItem(e.target.value)}
         />
         <button
             type='submit'
-            aria-label='Add Item'
+            aria-label='Add List item'
             onClick={() => inputRef.current.focus()}
         >
             <FaPlus />
